@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Оформление заказа</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header header-small">
+      <div class="container">
+        <div class="header-burger">
+          <button type="button"><i class="icon-burger"></i></button>
+        </div>
+        <div class="header-logo"><a href="#"><img src="./img/logo-light.png" alt="logo"></a></div>
+        <nav class="header-nav">
+          <ul>
+            <li class="active"><a href="#">Каталог </a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-right"><a class="item desktop a-hide" href="#"><i class="icon-search"></i></a><a class="item open-modal desktop" href="#" id="auth-active"><i class="icon-user"></i></a><a class="item desktop" href="#"><i class="icon-heart"></i><span>12</span></a><a class="item" href="#"><i class="icon-shopping-bag"></i><span>0</span></a></div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="speedbar"><a href="#">Главная</a>-<a href="#">Личный кабинет</a>-<a href="#">Корзина</a>-<span>Оформление заказа</span></div>
+      <h1 class="text-title">Оформление заказа</h1>
+      <div class="form-box">
+        <div class="form-box-table">
+          <div class="tb-section">
+            <div class="tb-section_header"><span class="num">1</span>
+              <div class="title">Контактные данные</div>
+            </div>
+            <div class="tb-section_content">
+              <div class="fieldgroup">
+                <div class="label-field">
+                  <label class="label">Фамилия</label>
+                  <input class="field" type="text" placeholder="">
+                </div>
+                <div class="label-field">
+                  <label class="label">Имя</label>
+                  <input class="field" type="text" placeholder="">
+                </div>
+                <div class="label-field">
+                  <label class="label">Отчество</label>
+                  <input class="field" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="fieldgroup">
+                <div class="label-field">
+                  <label class="label">Эл.почта</label>
+                  <input class="field" type="email" placeholder="">
+                </div>
+                <div class="label-field">
+                  <label class="label">Телефон</label>
+                  <input class="field" type="phone" placeholder="+38">
+                </div>
+                <div class="label-field">
+                  <label class="label">Индекс</label>
+                  <input class="field" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="fieldgroup">
+                <div class="label-field">
+                  <label class="label">Город</label>
+                  <select class="field">
+                    <option value="0">Вариант 1</option>
+                    <option value="0">Вариант 2</option>
+                    <option value="0">Вариант 3</option>
+                    <option value="0">Вариант 4</option>
+                  </select>
+                </div>
+                <div class="label-field">
+                  <label class="label">Улица</label>
+                  <input class="field" type="text" placeholder="">
+                </div>
+                <div class="label-field w-15">
+                  <label class="label">Дом</label>
+                  <input class="field" type="text" placeholder="">
+                </div>
+                <div class="label-field w-15">
+                  <label class="label">Квартира</label>
+                  <input class="field" type="text" placeholder="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tb-section">
+            <div class="tb-section_header"><span class="num">2</span>
+              <div class="title">Способ получения заказа</div>
+            </div>
+            <div class="tb-section_content">
+              <div class="fieldset">
+                <label class="checkbox">
+                  <input type="radio" name="check"><span class="checked"></span><span class="text">Доставка курьером по Красноярску</span>
+                </label>
+                <div class="table"><span>Бесплатная доставка и примерка</span>
+                  <div class="table-field">
+                    <div class="label-field">
+                      <label class="label">Удобная дата доставки</label>
+                      <div class="fieldset flex items-center"><i class="icon-calendar"></i>
+                        <input class="field datapicker" type="text" placeholder="">
+                      </div>
+                    </div>
+                    <div class="label-field">
+                      <label class="label">Удобное время доставки</label>
+                      <select class="field">
+                        <option value="0">Вариант 1</option>
+                        <option value="0">Вариант 2</option>
+                        <option value="0">Вариант 3</option>
+                        <option value="0">Вариант 4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <label class="checkbox">
+                  <input type="radio" name="check"><span class="checked"></span><span class="text">Самовывоз</span>
+                </label>
+                <label class="checkbox">
+                  <input type="radio" name="check"><span class="checked"></span><span class="text">Почтой России / Транспортной компанией </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="tb-section">
+            <div class="tb-section_header"><span class="num">3</span>
+              <div class="title">Способ оплаты</div>
+            </div>
+            <div class="tb-section_content">
+              <div class="fieldset last">
+                <label class="checkbox">
+                  <input type="radio" name="check2"><span class="checked"></span><span class="text">Безналичная оплата курьеру</span>
+                </label>
+                <label class="checkbox">
+                  <input type="radio" name="check2"><span class="checked"></span><span class="text">Оплата в кассе магазина</span>
+                </label>
+                <label class="checkbox">
+                  <input type="radio" name="check2"><span class="checked"></span><span class="text">Оплата на сайте</span>
+                </label>
+                <label class="checkbox">
+                  <input type="radio" name="check2"><span class="checked"></span><span class="text">Оплата подарочной картой</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="tb-section">
+            <div class="tb-section_header"><span class="num">4</span>
+              <div class="title">Комментарий</div>
+            </div>
+            <div class="tb-section_content">
+              <div class="label-field">
+                <label class="label">Комментарий</label>
+                <textarea class="field" name=""></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="aside-group">
+          <div class="aside"><span class="title">Итого</span>
+            <ul>
+              <li><span>2 товара на сумму</span><span>21 000 ₽</span></li>
+              <li><span>Вы экономите</span><span>-550 ₽</span></li>
+              <li><span>стоимость доставки</span><span>450 ₽</span></li>
+              <li><b>Итого к оплате</b><b>21 450 ₽</b></li>
+            </ul><a class="button-basic flex-center" href="#" id="order_success">Заказ подтверждаю</a>
+            <div class="offer mt-20">Я согласен с условиями <a href="#">Публичной оферты и обработки персональных данных</a></div>
+          </div><a class="button-border flex flex-center w-100" href="#">Редактировать заказ</a>
+        </aside>
+      </div>
+      <h2 class="text-title">Просмотренные товары</h2>
+      <div class="card mb-110 card-history">
+        <div class="card-item">
+          <div class="card-item_top"><span class="item_top-right green">new</span>
+            <button class="item_top-button" type="button"><i class="icon-heart_active"></i></button>
+            <div class="carousel owl-carousel"><img src="./img/items/1.jpg" alt="item"><img src="./img/items/2.jpg" alt="item"></div>
+          </div>
+          <div class="card-item_bottom">
+            <div class="flex flex-sb"><a class="title" href="#">PEPE JEANS</a>
+              <div class="price">2 350 ₽</div>
+            </div>
+            <ul class="item_bottom-list">
+              <li>женские черные ботинки</li>
+              <li>BOBBING CITY</li>
+            </ul>
+            <div class="item_bottom-button"><span>35</span><span class="not-found">36</span><span class="not-found">37</span><span>38</span><span>39</span><span>40</span></div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item_top">
+            <button class="item_top-button" type="button"><i class="icon-heart_active"></i></button>
+            <div class="carousel owl-carousel"><img src="./img/items/2.jpg" alt="item"><img src="./img/items/2.jpg" alt="item"></div>
+          </div>
+          <div class="card-item_bottom">
+            <div class="flex flex-sb"><a class="title" href="#">PEPE JEANS</a>
+              <div class="price">2 350 ₽</div>
+            </div>
+            <ul class="item_bottom-list">
+              <li>женские черные ботинки</li>
+              <li>BOBBING CITY</li>
+            </ul>
+            <div class="item_bottom-button"><span>35</span><span class="not-found">36</span><span class="not-found">37</span><span>38</span><span>39</span><span>40</span></div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item_top">
+            <button class="item_top-button" type="button"><i class="icon-heart_active"></i></button>
+            <div class="carousel owl-carousel"><img src="./img/items/2.jpg" alt="item"><img src="./img/items/2.jpg" alt="item"></div>
+          </div>
+          <div class="card-item_bottom">
+            <div class="flex flex-sb"><a class="title" href="#">PEPE JEANS</a>
+              <div class="price">2 350 ₽</div>
+            </div>
+            <ul class="item_bottom-list">
+              <li>женские черные ботинки</li>
+              <li>BOBBING CITY</li>
+            </ul>
+            <div class="item_bottom-button"><span>35</span><span class="not-found">36</span><span class="not-found">37</span><span>38</span><span>39</span><span>40</span></div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item_top"><span class="item_top-right red">sale</span>
+            <button class="item_top-button" type="button"><i class="icon-heart_active"></i></button>
+            <div class="carousel owl-carousel"><img src="./img/items/3.jpg" alt="item"><img src="./img/items/2.jpg" alt="item"></div>
+          </div>
+          <div class="card-item_bottom">
+            <div class="flex flex-sb"><a class="title" href="#">PEPE JEANS</a>
+              <div class="price discount">2 350 ₽<span>3 200 ₽</span></div>
+            </div>
+            <ul class="item_bottom-list">
+              <li>женские черные ботинки</li>
+              <li>BOBBING CITY</li>
+            </ul>
+            <div class="item_bottom-button"><span>35</span><span class="not-found">36</span><span class="not-found">37</span><span>38</span><span>39</span><span>40</span></div>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item_top">
+            <button class="item_top-button" type="button"><i class="icon-heart_active"></i></button>
+            <div class="carousel owl-carousel"><img src="./img/items/4.jpg" alt="item"><img src="./img/items/3.jpg" alt="item"></div>
+          </div>
+          <div class="card-item_bottom">
+            <div class="flex flex-sb"><a class="title" href="#">PEPE JEANS</a>
+              <div class="price">2 350 ₽</div>
+            </div>
+            <ul class="item_bottom-list">
+              <li>женские черные ботинки</li>
+              <li>BOBBING CITY</li>
+            </ul>
+            <div class="item_bottom-button"><span>35</span><span class="not-found">36</span><span class="not-found">37</span><span>38</span><span>39</span><span>40</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-top_left">
+          <div class="list"><a class="button-lightGray" href="#"><i class="icon-vk"></i></a><a class="button-lightGray" href="#"><i class="icon-instagram"></i></a><a class="button-lightGray" href="#"><i class="icon-facebook"></i></a></div>
+          <div class="footer-table">
+            <div class="footer-table_item"><i class="icon-locale"></i><span>г. Красноярск, ул.Чернышевского, 81</span></div>
+            <div class="footer-table_item"><i class="icon-wall-clock"></i><span>Пн-Вс: 10.00-20.00</span></div>
+            <div class="footer-table_item"><i class="icon-whatsapp"></i><span>+7 (391) 219-10-00</span></div>
+          </div>
+        </div>
+        <div class="footer-top_center"><a href="#"><img src="./img/logo.png" alt=""></a></div>
+        <div class="footer-top_right">
+          <div class="list"><a class="button-lightGray" href="#"><i class="icon-vk"></i></a><a class="button-lightGray" href="#"><i class="icon-instagram"></i></a><a class="button-lightGray" href="#"><i class="icon-facebook"></i></a></div>
+          <div class="footer-table">
+            <div class="footer-table_item"><i class="icon-locale"></i><span>г. Симферополь, пр. Кирова, 7А  </span></div>
+            <div class="footer-table_item"><i class="icon-wall-clock"></i><span>Пн-Вс: 10.00-20.00</span></div>
+            <div class="footer-table_item"><i class="icon-whatsapp"></i><span>+7 (365) 277-33-77</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li class="accent"><a href="#">Обувь</a>
+            <button class="mobile" type="button"><i class="icon-baseline-add"></i></button>
+          </li>
+          <ul>
+            <li><a href="#">Ботильоны</a></li>
+            <li><a href="#">Ботинки</a></li>
+            <li><a href="#">Кроссовки</a></li>
+            <li><a href="#">Сапоги</a></li>
+            <li><a href="#">Туфли</a></li>
+            <li><a href="#">Вся обувь</a></li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="accent"><a href="#">Сумки</a>
+            <button class="mobile" type="button"><i class="icon-baseline-add"></i></button>
+          </li>
+          <ul>
+            <li><a href="#">Багаж</a></li>
+            <li><a href="#">Клатчи</a></li>
+            <li><a href="#">Кошельки</a></li>
+            <li><a href="#">Поясные сумки</a></li>
+            <li><a href="#">Рюкзаки</a></li>
+            <li><a href="#">Спортивные сумки</a></li>
+            <li><a href="#">Сумки</a></li>
+            <li><a href="#">Сумки для ноутбука</a></li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="accent"><a href="#">Одежда</a>
+            <button class="mobile" type="button"><i class="icon-baseline-add"></i></button>
+          </li>
+          <ul>
+            <li><a href="#">Брюки</a></li>
+            <li><a href="#">Верхняя одежда</a></li>
+            <li><a href="#">Джемперы и свитеры</a></li>
+            <li><a href="#">Джинсы</a></li>
+            <li><a href="#">Кардиганы и кофты</a></li>
+            <li><a href="#">Платья</a></li>
+            <li><a href="#">Трикотаж</a></li>
+            <li><a href="#">Юбки</a></li>
+            <li><a href="#">Вся одежда</a></li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="accent"><a href="#">Аксессуары</a>
+            <button class="mobile" type="button"><i class="icon-baseline-add"></i></button>
+          </li>
+          <ul>
+            <li><a href="#">Головные уборы</a></li>
+            <li><a href="#">Другие аксессуары</a></li>
+            <li><a href="#">Защитные маски</a></li>
+            <li><a href="#">Очки и оправы</a></li>
+            <li><a href="#">Ремни и подтяжки</a></li>
+            <li><a href="#">Сумки и рюкзаки</a></li>
+            <li><a href="#">Украшения</a></li>
+            <li><a href="#">Часы</a></li>
+            <li><a href="#">Все аксессуары</a></li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="accent"><a href="#">Уходовая косметика</a>
+            <button class="mobile" type="button"><i class="icon-baseline-add"></i></button>
+          </li>
+          <ul>
+            <li><a href="#">Для одежды</a></li>
+            <li><a href="#">Для обуви</a></li>
+            <li><a href="#">Для аксессуаров</a></li>
+          </ul>
+        </ul>
+        <div class="flex flex-col">
+          <ul class="not-group">
+            <li><a href="#">Размерная сетка</a></li>
+            <li><a href="#">Условия возврата и обмена</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Способы оплаты</a></li>
+          </ul>
+          <ul class="not-group">
+            <li><a href="#">Способы доставки</a></li>
+            <li><a href="#">Самовывоз Красноярск</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Юридический раздел</a></li>
+            <li><a href="#">Полезная информация</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2020 Brando. Все права сохранены</span><a class="footer-bottom_right" href="#"><span>Разработка сайта - Бизнес Коммуникации</span><img src="./img/logo-copy.png" alt="copy"></a></div>
+    </footer>
+    <div class="modal-menu">
+      <div class="modal-menu_left">
+        <div class="level-1">
+          <ul class="menu-accent">
+            <li><a href="#">Личный кабинет</a></li>
+          </ul>
+          <form action="/">
+            <div class="search-field mobile">
+              <input class="field" type="text" placeholder="Поиск">
+              <button class="search-button" type="submit"><i class="icon-search"></i></button>
+            </div>
+          </form><a class="logo" href="#"><img src="./img/logo-light.png" alt="logo"></a>
+          <ul class="menu-accent">
+            <li class="first"><a href="#">Женщинам</a><a class="last" href="#">Мужчинам</a></li>
+            <li><a class="desktop" href="#">Каталог</a><span class="mobile" id="catalog-active">Каталог</span></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Скидки</a></li>
+            <li><a href="#">Новинки</a></li>
+            <li><a class="text-red" href="#">Акции</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="menu">
+            <li><a href="#">Размерная сетка</a></li>
+            <li><a href="#">Условия возврата и обмена</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Способы оплаты</a></li>
+            <li><a href="#">Способы доставки</a></li>
+            <li><a href="#">Самовывоз Красноярск</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Юридический раздел</a></li>
+            <li><a href="#">Полезная информация</a></li>
+          </ul><a class="button-basic" href="#" id="active_modal-phone">Связаться с нами</a>
+        </div>
+        <div class="level-2">
+          <ul class="menu-accent">
+            <li class="first prev"><a href="#">Каталог</a></li>
+            <li><a href="#">Обувь</a></li>
+            <li><a href="#">Сумки</a></li>
+            <li><a class="level-3-active" href="#">Одежда</a></li>
+            <li><a href="#">Аксессуары</a></li>
+            <li><a href="#">Уходовая косметика</a></li>
+          </ul>
+        </div>
+        <div class="level-3">
+          <ul class="menu-accent">
+            <li class="first prev"><a href="#">Одежда</a></li>
+            <li> <a href="#">Брюки</a></li>
+            <li> <a href="#">Верхняя одежда</a></li>
+            <li> <a href="#">Джемперы и свитеры</a></li>
+            <li> <a href="#">Джинсы</a></li>
+            <li> <a href="#">Кардиганы и кофты</a></li>
+            <li> <a href="#">Платья</a></li>
+            <li> <a href="#">Трикотаж</a></li>
+            <li> <a href="#">Юбки</a></li>
+            <li> <a href="#">Вся одежда</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-menu_right">
+        <form action="/">
+          <div class="search-field">
+            <input class="field" type="text" placeholder="Поиск">
+            <button class="search-button" type="submit"><i class="icon-search"></i></button>
+          </div>
+        </form>
+        <div class="modal-menu_sliders owl-carousel"><a class="modal-menu_slider" href="#"><img src="./img/banner-collection.png" alt="banner"><span class="title">Новая коллекция ”20-”21</span></a><a class="modal-menu_slider" href="#"><img src="./img/banner-collection.png" alt="banner"><span class="title">Новая коллекция ”21-”22</span></a></div>
+        <div class="modal-menu_list">
+          <ul>
+            <li class="accent"><a href="#">Обувь</a></li>
+            <li><a href="#">Ботильоны</a></li>
+            <li><a href="#">Ботинки</a></li>
+            <li><a href="#">Кроссовки</a></li>
+            <li><a href="#">Сапоги</a></li>
+            <li><a href="#">Туфли</a></li>
+            <li><a href="#">Вся обувь</a></li>
+          </ul>
+          <ul>
+            <li class="accent"><a href="#">Сумки</a></li>
+            <li><a href="#">Багаж</a></li>
+            <li><a href="#">Клатчи</a></li>
+            <li><a href="#">Кошельки</a></li>
+            <li><a href="#">Поясные сумки</a></li>
+            <li><a href="#">Рюкзаки</a></li>
+            <li><a href="#">Спортивные сумки</a></li>
+            <li><a href="#">Сумки</a></li>
+            <li><a href="#">Сумки для ноутбука</a></li>
+          </ul>
+          <ul>
+            <li class="accent"><a href="#">Одежда</a></li>
+            <li><a href="#">Брюки</a></li>
+            <li><a href="#">Верхняя одежда</a></li>
+            <li><a href="#">Джемперы и свитеры</a></li>
+            <li><a href="#">Джинсы</a></li>
+            <li><a href="#">Кардиганы и кофты</a></li>
+            <li><a href="#">Платья</a></li>
+            <li><a href="#">Трикотаж</a></li>
+            <li><a href="#">Юбки</a></li>
+            <li><a href="#">Вся одежда</a></li>
+          </ul>
+          <ul>
+            <li class="accent"><a href="#">Аксессуары</a></li>
+            <li><a href="#">Головные уборы</a></li>
+            <li><a href="#">Другие аксессуары</a></li>
+            <li><a href="#">Защитные маски</a></li>
+            <li><a href="#">Очки и оправы</a></li>
+            <li><a href="#">Ремни и подтяжки</a></li>
+            <li><a href="#">Сумки и рюкзаки</a></li>
+            <li><a href="#">Украшения</a></li>
+            <li><a href="#">Часы</a></li>
+            <li><a href="#">Все аксессуары</a></li>
+          </ul>
+          <ul>
+            <li class="accent"><a href="#">Уходовая косметика</a></li>
+            <li><a href="#">Для одежды</a></li>
+            <li><a href="#">Для обуви</a></li>
+            <li><a href="#">Для аксессуаров</a></li>
+          </ul>
+        </div>
+        <div class="modal-menu_brands">
+          <div class="brands-slider owl-carousel"><a class="item" href="#"><img src="./img/brands/brand1.png" alt="brand1"></a><a class="item" href="#"><img src="./img/brands/brand2.png" alt="brand2"></a><a class="item" href="#"><img src="./img/brands/brand3.png" alt="brand3"></a><a class="item" href="#"><img src="./img/brands/brand4.png" alt="brand4"></a><a class="item" href="#"><img src="./img/brands/brand5.png" alt="brand5"></a><a class="item" href="#"><img src="./img/brands/brand6.png" alt="brand6"></a><a class="item" href="#"><img src="./img/brands/brand3.png" alt="brand3"></a><a class="item" href="#"><img src="./img/brands/brand4.png" alt="brand4"></a><a class="item" href="#"><img src="./img/brands/brand5.png" alt="brand5"></a><a class="item" href="#"><img src="./img/brands/brand6.png" alt="brand6"></a></div>
+        </div>
+      </div>
+      <button class="button-close" type="button" id="close-modal-menu"><i class="icon-close"></i></button>
+    </div>
+    <div class="popup-overlay" id="login-panel">
+      <div class="popup-wrap">
+        <button class="button-close popup-close" type="button"><i class="icon-close"></i></button>
+        <div class="popup-header">
+          <div class="figure"><i class="icon-messages-check"></i></div><span>Войти</span>
+        </div>
+        <form class="auth-form" action="/">
+          <input class="field-dark" type="text" placeholder="Ваш телефон">
+          <div class="fieldset">
+            <input class="field-dark password" type="password" name="password" placeholder="Пароль">
+            <button class="show-password" type="button"><i class="icon-view"></i></button>
+          </div>
+          <div class="auth-form_button"><a class="text-green w-100" href="#">Забыли пароль?</a>
+            <button class="button-basic flex-center" type="submit">Войти</button>
+          </div>
+          <div class="text-center"><a class="link-upper" href="#">Еще нет аккаунта?</a></div><a class="button-gray" href="#"><span>Зарегестрироваться </span></a>
+        </form>
+      </div>
+    </div>
+    <div class="popup-overlay" id="order-panel">
+      <div class="popup-wrap">
+        <button class="button-close popup-close" type="button"><i class="icon-close"></i></button>
+        <div class="popup-header">
+          <div class="figure"><i class="icon-messages-check"></i></div><span>Ваш заказ №99999</span>
+          <div class="subtitle">от 28.04.2020 13:37:16 </div><b>Успешно оформлен</b>
+          <p class="subtext">В ближайшее время с Вами свяжется наш менеджер для подтверждения заказа.</p>
+        </div>
+        <button class="button-basic flex-center w-100" type="submit" id="close-panel">Хорошо</button>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+  </body>
+</html>
